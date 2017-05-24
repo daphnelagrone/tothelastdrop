@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Review Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header id="top" class="main-header">
+      <!--      <span class="about-title"> <a href="index.html">To The Last Drop </a></span>-->
+      <a href="index.html"><img src="Logo.svg" alt="Logo" class="ttldlogo"></a>
+      <nav class="menu-nav">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="review.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+    <body class="review-body">
+      <style>
+      body  {
+              background-image: url("img/wood.jpg");
+              background-repeat:no-repeat;
+              background-size:cover;
+              background-size: 2000px;
+        }
+      </style>
+      
+      <h2 class="formrequest">Please give us a review!</h2>
+      
+      <form action="index.html" method="post" class="form">
+        
+        <fieldset>
+          
+          <legend><span class="number">1</span>Your Name</legend>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          
+        </fieldset>
+        
+        <fieldset>
+          
+          <legend><span class="number">2</span>Your Rating</legend>
+          
+          <label>Rating:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">1/5</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">2/5</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">3/5</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">4/5</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">5/5</label><br>
+          
+          </fieldset>
+          
+        <fieldset>
+          
+         <legend><span class="number">3</span>Additional Remarks</legend>
+          
+          <label for="bio">Comments:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+          
+        </fieldset>
+          
+        <button type="submit">Submit Review</button>
+        
+      </form>
+      <div class="space">
+      </div>
+     <footer class="review-footer">
+      <a href="https://www.facebook.com/To-The-Last-Drop-Coffee-Shop-156230227730522/"><img src="img/facebook.png" alt="facebook logo" class="social-icon"></a>
+      <a href="mailto:2thelastdrop@gmail.com"><img src="img/email-icon.png" alt="email logo" class="social-icon"></a>
+			<p>&copy; 2017 To The Last Drop.</p>
+		</footer>
+  </body>
+</html>
